@@ -22,7 +22,7 @@ export const Layout: React.FC<IProps> = ({ navItems, className }) => {
   // ]
 
   return (
-    <footer className='pt-10 pb-6 flex flex-col bg-background/10 backdrop-blur justify-center border border-[hsl(240,3.7%,15.9%)] rounded-t-[70px] bg-[#0c0c0d] text-white sm:pt-16 sm:pb-10'>
+    <footer className='pt-10 pb-6 flex flex-col bg-[#171719d9]/50 backdrop-blur justify-center border border-[hsl(240,3.7%,15.9%)] rounded-t-[70px] bg-[#0c0c0d] text-white sm:pt-16 sm:pb-10'>
       <ul className='flex px-5 flex-wrap text-lg justify-center gap-6 sm:flex-row sm:gap-20'>
         {navItems.map(({ href, label, _blank = false, exact }) => (
           <li key={label}>

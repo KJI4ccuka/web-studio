@@ -10,7 +10,7 @@ interface IProps {
 
 export const Project: React.FC<IProps> = ({ className }) => {
   return (
-    <Link target={'_blank'} href={''}>
+    <Link target={''} href={'/projects/project/1'}>
       <div className='cursor-pointer group relative border border-border rounded-lg shadow-lg overflow-hidden'>
         <div className='relative flex max-h-[360px] overflow-hidden'>
           <Image

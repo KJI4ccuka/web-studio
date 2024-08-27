@@ -95,7 +95,7 @@ export const ProjectsChart: React.FC<IProps> = () => {
   return (
     <Card
       data-chart={id}
-      className='flex flex-col  text-card-foreground border-border/60 bg-[#171719d9]/30 backdrop-blur'
+      className='flex flex-col text-card-foreground border-border/60 bg-[#171719d9]/30 backdrop-blur'
     >
       <ChartStyle id={id} config={chartConfig} />
       <CardHeader className='flex-row items-start space-y-0 pb-0'>

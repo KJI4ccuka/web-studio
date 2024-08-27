@@ -3,7 +3,7 @@ import { Layout } from '@/widgets/app-header/_ui/layout'
 import { Logo } from '@/components/ui/logo'
 import { NavBar } from '@/widgets/app-header/_ui/nav-bar'
 import { SidebarMenu } from '@/widgets/app-header/_ui/sidebar-menu'
-import { SignInButton } from '@/components/sign-in-button'
+import { SignInButton } from '@/components'
 
 interface IProps {
   className?: string

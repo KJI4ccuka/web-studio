@@ -1,8 +1,7 @@
 import React from 'react'
-import { Container } from '@/components'
+import { BgcGradients, Container } from '@/components'
 import { cn } from '@/components/ui/utils'
 import { Tabs } from '@/components/ui/tabs'
-import { BgcGradients } from '@/components/bgc-gradients'
 
 interface IProps {
   projectsSidebar: React.ReactNode
