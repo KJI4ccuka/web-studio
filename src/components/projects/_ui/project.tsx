@@ -5,12 +5,13 @@ import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 
 interface IProps {
+  num: number
   className?: string
 }
 
-export const Project: React.FC<IProps> = ({ className }) => {
+export const Project: React.FC<IProps> = ({ num, className }) => {
   return (
-    <Link target={''} href={'/projects/project/1'}>
+    <Link target={''} href={`/projects/${num}`}>
       <div className='cursor-pointer group relative border border-border rounded-lg shadow-lg overflow-hidden'>
         <div className='relative flex max-h-[360px] overflow-hidden'>
           <Image
@@ -58,7 +59,7 @@ export const Project: React.FC<IProps> = ({ className }) => {
             variant='outline'
             className='max-w-8 max-h-8 rounded border-white/50 font-normal border text-foreground/90 sm:max-w-10 sm:max-h-10'
           >
-            <h2 className='text-sm sm:text-[16px] '>{'index' + 1}</h2>
+            <h2 className='text-sm sm:text-[16px] '>{num}</h2>
           </Button>
         </div>
       </div>

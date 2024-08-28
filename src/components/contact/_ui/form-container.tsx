@@ -19,8 +19,7 @@ export const FormContainer: React.FC<IProps> = ({ className }) => {
           Get in Touch
         </h2>
         <p className='mt-3 mb-4 text-sm  text-muted-foreground font-light max-w-[360px] text-center sm:text-lg sm:mb-0'>
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          We'd love to hear from you. Please fill out the form below
+          Fill out the form and we will contact you to discuss your project
         </p>
       </div>
 

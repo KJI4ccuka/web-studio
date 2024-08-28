@@ -21,7 +21,7 @@ export const Layout: React.FC<IProps> = ({
 
         <Container>
           <section className='max-w-7xl mx-auto'>
-            <Tabs defaultValue={'All courses'}>
+            <Tabs defaultValue={'All projects'}>
               {projectsSidebar}
               {projectsList}
             </Tabs>

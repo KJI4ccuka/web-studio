@@ -15,7 +15,11 @@ export const TermsCheckbox: React.FC<IProps> = ({
 }) => {
   return (
     <div className={cn(className, 'items-top flex space-x-2')}>
-      <Checkbox checked={checked} onCheckedChange={onCheckedChange} />
+      <Checkbox
+        className={'w-5 h-5 border-border'}
+        checked={checked}
+        onCheckedChange={onCheckedChange}
+      />
       <div className='grid gap-1.5 text-left leading-none'>
         <label
           htmlFor='terms1'
@@ -24,7 +28,7 @@ export const TermsCheckbox: React.FC<IProps> = ({
           Accept terms and conditions
         </label>
         <p className='text-sm text-muted-foreground'>
-          You agree to our Terms of Service and Privacy Policy.
+          You agree to our <span className={'underline'}>Privacy Policy</span>
         </p>
       </div>
     </div>

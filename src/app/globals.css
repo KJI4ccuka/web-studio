@@ -17,7 +17,7 @@ html {
     --background: 240, 10%, 4%;
     --foreground: 0 0% 98%;
 
-    --card: 240 4% 9% 0.85;
+    --card: 240 4% 9%;
     --card-foreground: 0 0% 98%;
 
     --popover: 0 0% 100%;

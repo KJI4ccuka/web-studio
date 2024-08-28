@@ -20,7 +20,7 @@ export const ProjectsList: React.FC<IProps> = ({ className }) => {
 
   return (
     <>
-      <TabsContent value={'All courses'}>
+      <TabsContent value={'All projects'}>
         <Card className='text-foreground drop-shadow-xl shadow-white/10 border-border/60 bg-[#171719d9]/30 backdrop-blur'>
           <CardHeader className={'text-center p-4 sm:p-6'}>
             <CardTitle className='text-2xl text-foreground font-medium sm:pt-2 sm:text-3xl'>
@@ -30,10 +30,10 @@ export const ProjectsList: React.FC<IProps> = ({ className }) => {
           </CardHeader>
           <CardContent>
             <div className='grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-7'>
-              <Project />
-              <Project />
-              <Project />
-              <Project />
+              <Project num={1} />
+              <Project num={2} />
+              <Project num={3} />
+              <Project num={4} />
             </div>
           </CardContent>
         </Card>
