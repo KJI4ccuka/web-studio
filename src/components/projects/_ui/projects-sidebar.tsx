@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { cn } from '@/components/ui/utils'
 import { TechnologiesGraphics } from '@/components/projects/_ui/technologies-graphics'
+import { Sorted } from '@/components/projects/_ui/sorted'
 
 interface IProps {
   className?: string
@@ -21,18 +22,22 @@ export const ProjectsSidebar: React.FC<IProps> = ({ className }) => {
       <CardHeader className={'border-b'}>
         <TechnologiesGraphics />
       </CardHeader>
-      <CardContent className={'py-4'}>
+      <CardContent className={'flex justify-between py-4'}>
         <TabsList className='h-full space-x-2 bg-card/35 backdrop-blur border rounded-lg'>
           {nav.map((item, index) => (
             <TabsTrigger
               key={index}
-              className={'text-[16px] leading-6'}
+              className={
+                'text-[16px] leading-6 data-[state=active]:bg-primary/90'
+              }
               value={item}
             >
               {item}
             </TabsTrigger>
           ))}
         </TabsList>
+
+        <Sorted nav={nav} />
       </CardContent>
     </Card>
   )

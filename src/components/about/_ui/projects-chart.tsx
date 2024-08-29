@@ -105,12 +105,12 @@ export const ProjectsChart: React.FC<IProps> = () => {
         </div>
         <Select value={activeMonth} onValueChange={setActiveMonth}>
           <SelectTrigger
-            className='ml-auto h-7 w-[130px] rounded-lg pl-2.5'
+            className='w-[180px] bg-card border-border ml-auto'
             aria-label='Select a value'
           >
             <SelectValue placeholder='Select month' />
           </SelectTrigger>
-          <SelectContent align='end' className='rounded-xl'>
+          <SelectContent align='end' className='rounded-lg'>
             {months.map((key) => {
               const config = chartConfig[key as keyof typeof chartConfig]
 
