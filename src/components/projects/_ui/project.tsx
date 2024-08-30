@@ -14,6 +14,7 @@ interface IProject {
 
 interface IProps {
   project: IProject
+  index: number
   className?: string
 }
 
