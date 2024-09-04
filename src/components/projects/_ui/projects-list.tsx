@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { TabsContent } from '@/components/ui/tabs'
+import { ProjectSkeleton } from '@/components/projects/_ui/skeleton'
 
 interface IProject {
   _id: string
@@ -25,6 +26,7 @@ interface IProps {
 
 export const ProjectsList: React.FC<IProps> = ({ className }) => {
   const [projects, setProjects] = useState<IProject[]>([])
+  const [projectsLoading, setProjectsLoading] = useState(true)
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -32,10 +34,11 @@ export const ProjectsList: React.FC<IProps> = ({ className }) => {
       const projects: IProject[] = await data.json()
 
       setProjects(projects)
+      setProjectsLoading(false)
     }
 
     fetchProjects()
-  }, [])
+  }, [projectsLoading])
 
   return (
     <TabsContent value={'All projects'}>
@@ -48,13 +51,13 @@ export const ProjectsList: React.FC<IProps> = ({ className }) => {
         </CardHeader>
         <CardContent>
           <div className='grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-7'>
-            {projects.length > 0 ? (
-              projects.map((project, index) => (
-                <Project key={project._id} project={project} index={index} />
-              ))
-            ) : (
-              <p>No projects found</p>
-            )}
+            {!projectsLoading
+              ? projects.map((project, index) => (
+                  <Project key={project._id} project={project} index={index} />
+                ))
+              : new Array(2)
+                  .fill(null)
+                  .map((project, index) => <ProjectSkeleton key={index} />)}
           </div>
         </CardContent>
       </Card>

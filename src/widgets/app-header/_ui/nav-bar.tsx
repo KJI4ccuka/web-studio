@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/components/ui/utils'
 import { INavItem } from '@/types'
+import { Languages } from 'lucide-react'
 
 interface IProps {
   navItems: INavItem[]
@@ -37,7 +38,8 @@ export const NavBar: React.FC<IProps> = ({ navItems, className }) => {
           ))}
         </ul>
         <div className='flex gap-2.5 ml-16 text-[16px] items-center'>
-          <span className='text-foreground opacity-70 pt-1'>En </span> |{' '}
+          <span className='text-foreground opacity-70 pt-1'>En </span>
+          <Languages className={'w-5 h-5'} />{' '}
           <p className='pt-1 opacity-20'>Cz</p>
         </div>
       </div>

@@ -20,7 +20,7 @@ const NAV_ITEMS = [
 export const AppHeader: React.FC<IProps> = ({ className }) => {
   return (
     <Layout
-      logo={<Logo size={'large'} text={'Web Studio'} />}
+      logo={<Logo size={'large'} text={'Blove Studio'} />}
       nav={<NavBar navItems={NAV_ITEMS} />}
       button={<SignInButton />}
       sidebar={

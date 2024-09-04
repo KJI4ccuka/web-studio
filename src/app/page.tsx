@@ -14,7 +14,7 @@ export default function Home() {
             <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
               <div
                 className='relative bg-foreground/5 rounded-full px-4 py-1 text-sm leading-6
-                 text-secondary ring-[0.6px] ring-ring'
+                 text-secondary ring-[0.6px] ring-ring border-2'
               >
                 Turnkey development for your business{' '}
                 <Link href={'#'} className='font-semibold text-foreground'>
