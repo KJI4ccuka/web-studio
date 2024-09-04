@@ -75,27 +75,7 @@ export default function FullProjectPage() {
                   </ScrollArea>
                 </TabsContent>
                 <TabsContent value='Requirements'>
-                  <ScrollArea className='h-40 w-full border-border border rounded-lg p-2.5'>
-                    {/*<ul className='grid gap-3 mr-1.5'>*/}
-                    {/*  {productsInfo.product_requirements.map((item, index) => {*/}
-                    {/*    const [key, value] = Object.entries(item)[0]*/}
-
-                    {/*    return (*/}
-                    {/*      <li*/}
-                    {/*        key={index}*/}
-                    {/*        className='flex items-center justify-between'*/}
-                    {/*      >*/}
-                    {/*        <span className='text-xs text-muted-foreground font-light lg:text-sm'>*/}
-                    {/*          - {key}*/}
-                    {/*        </span>*/}
-                    {/*        <span className={'text-xs lg:text-sm'}>*/}
-                    {/*          {value.toUpperCase()}*/}
-                    {/*        </span>*/}
-                    {/*      </li>*/}
-                    {/*    )*/}
-                    {/*  })}*/}
-                    {/*</ul>*/}
-                  </ScrollArea>
+                  <ScrollArea className='h-40 w-full border-border border rounded-lg p-2.5'></ScrollArea>
                 </TabsContent>
               </Tabs>
             </div>
